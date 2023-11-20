@@ -1,5 +1,5 @@
 import Link from "next/link";
-import "./Navbar.css";
+import "./NavBar.css";
 import dataNavbar from "./NavBarData";
 //con esta constante evitamos el harcodeo en las rutas
 
