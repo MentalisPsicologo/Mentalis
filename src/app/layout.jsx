@@ -1,5 +1,4 @@
 import "./globals.css";
-import NavBar from "@/components/NavBar/NavBar";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false;
@@ -12,10 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
    return (
       <html lang="en">
-         <body>
-            <NavBar />
-            {children}
-         </body>
+         <body>{children}</body>
       </html>
    );
 }
