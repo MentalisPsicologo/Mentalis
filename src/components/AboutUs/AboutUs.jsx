@@ -1,5 +1,4 @@
-import "./AboutUs.css";
-import dataAboutUs from "./AboutUsData";
+import { dataAboutUs } from "@/app/shared/enums";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {

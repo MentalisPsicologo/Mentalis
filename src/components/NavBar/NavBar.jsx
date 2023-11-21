@@ -1,6 +1,6 @@
 import Link from "next/link";
 import "./NavBar.css";
-import dataNavbar from "./NavBarData";
+import { dataNavbar } from "@/app/shared/enums";
 //con esta constante evitamos el harcodeo en las rutas
 
 const NavBar = () => {

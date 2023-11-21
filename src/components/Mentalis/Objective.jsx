@@ -1,4 +1,4 @@
-import dataObjective from "./ObjectiveData";
+import { dataObjective } from "@/app/shared/enums";
 import Image from "next/image";
 
 const ObjectiveCard = () => {

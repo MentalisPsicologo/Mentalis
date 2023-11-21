@@ -1,11 +1,11 @@
 import "./serviceCard.css";
 import Image from "next/image";
-import dataCards from "./serviceData";
+import { dataServices } from "@/app/shared/enums";
 
 const ServiceCard = () => {
    return (
       <div>
-         {dataCards.map((card, index) => (
+         {dataServices.map((card, index) => (
             <div key={index}>
                <Image
                   src={card.image}
@@ -14,7 +14,7 @@ const ServiceCard = () => {
                   alt="Img logo servicos"
                />
                <h3>{card.title}</h3>
-               <p>{card.description}</p>
+               <p>{card.summary}</p>
             </div>
          ))}
       </div>
