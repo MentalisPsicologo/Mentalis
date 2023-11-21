@@ -1,0 +1,30 @@
+.titulo {
+display: none;
+}
+/* .logoLandingPage {
+   width: 90%;
+   margin-top: 3rem;
+} */
+.logoLandingPage {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 100%;
+  animation: fadeIn 3s ease-out; /* Agrega una animación de desvanecimiento */
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (min-width: 768px)  {
+   .logoLandingPage {
+      width: 60%;
+   }
+}

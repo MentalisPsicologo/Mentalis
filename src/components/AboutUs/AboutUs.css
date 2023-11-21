@@ -1,0 +1,9 @@
+.redes {
+   display: flex;
+   justify-content: space-around;
+}
+
+.icon{
+   height: 5rem;
+   color: #D0EAA3;
+}

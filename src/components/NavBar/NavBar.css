@@ -1,7 +1,22 @@
-.navbar {
-   background: rgb(226, 225, 225);
+.navBar {
+   background: #FAD8CE;
+   flex-direction: column;
    display: flex;
    justify-content: space-between;
    padding: 0 3rem;
    align-items: center;
+}
+.menus {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   gap: 0.5rem;
+}
+.boton {
+   background-color: #D0EAA3;
+   border: 2px solid black;
+   width: 10rem;
+   padding: 0.5rem;
+   border-radius: 0.5rem;
+   text-decoration: none;
 }
