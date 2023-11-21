@@ -29,6 +29,16 @@ export const dataAboutUs = [
    }, */
 ];
 
+/* export const dataFooter = [
+   {
+      logoImage: "",
+      description: "",
+      URLFacebook: "",
+      URLInstagram: "",
+      URLWhatsapp: "",
+   },
+]; */
+
 export const dataMission = [
    {
       title: "Este es el titulo de las mision",
