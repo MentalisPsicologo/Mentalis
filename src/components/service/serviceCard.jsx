@@ -14,7 +14,7 @@ const ServiceCard = () => {
                   alt="Img logo servicos"
                />
                <h3>{card.title}</h3>
-               <p>{card.description}</p>
+               <p>{card.summary}</p>
             </div>
          ))}
       </div>

@@ -5,15 +5,17 @@ import { dataNavbar } from "@/app/shared/enums";
 
 const NavBar = () => {
    return (
-      <nav className="navbar ">
-         <Link href="/" className="LogoInicio">
-            <h2>Principal</h2>
+      <nav className="navBar ">
+         <Link href="/" className="logoInicio">
+            <h2>Mentalis</h2>
          </Link>
-         {dataNavbar.map((item, index) => (
-            <Link key={index} href={item.url}>
-               {item.name}
-            </Link>
-         ))}
+         <div className="menus">
+            {dataNavbar.map((item, index) => (
+               <Link className="boton" key={index} href={item.url}>
+                  {item.name}
+               </Link>
+            ))}
+         </div>
       </nav>
    );
 };
