@@ -1,4 +1,4 @@
-import dataMission from "./MissionData";
+import { dataMission } from "@/app/shared/enums";
 import Image from "next/image";
 
 const MissionCard = () => {

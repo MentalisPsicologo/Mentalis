@@ -8,35 +8,32 @@ export const metadata = {
 
 export default function AcercaDe() {
    return (
-      <div id="principal">
-         <div id="vision">
+      <div>
+         <div>
             <h2>Visión</h2>
             <p>
                Aca ira una breve descripcion o concepto sobre las visiones de
                Mentalis.
             </p>
             <VisionCard />
-            <a href="#principal">arriba</a>
          </div>
          <hr />
-         <div id="mision">
+         <div>
             <h2>Misión</h2>
             <p>
                Aca ira una breve descripcion o concepto sobre las misiones de
                Mentalis.
             </p>
             <MissionCard />
-            <a href="#principal">arriba</a>
          </div>
          <hr />
-         <div id="objetivos">
+         <div>
             <h2>Objetivos</h2>
             <p>
                Aca ira una breve descripcion o concepto sobre los objetivos de
                Mentalis.
             </p>
             <ObjectiveCard />
-            <a href="#principal">arriba</a>
          </div>
       </div>
    );

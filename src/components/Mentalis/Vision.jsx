@@ -1,4 +1,4 @@
-import dataVision from "./visionData";
+import { dataVision } from "@/app/shared/enums";
 import Image from "next/image";
 
 const VisionCard = () => {
