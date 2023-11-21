@@ -4,8 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
    faLinkedin,
    faTwitterSquare,
-   faAndroid,
-   faDropbox,
 } from "@fortawesome/free-brands-svg-icons";
 
 const AboutUs = () => {
@@ -36,8 +34,6 @@ const AboutUs = () => {
                   >
                      <FontAwesomeIcon icon={faTwitterSquare} />
                   </a>
-                  <FontAwesomeIcon icon={faAndroid} className="icon" />
-                  <FontAwesomeIcon icon={faDropbox} className="icon" />
                </div>
             </div>
          ))}
