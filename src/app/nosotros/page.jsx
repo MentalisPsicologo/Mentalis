@@ -10,7 +10,7 @@ const NosotrosPage = () => {
          <div>
             <h2>Sobre nosotros</h2>
             <p>
-               Aca iria una breve descripcion del personal que trabaja en
+               Aca ira una breve descripcion del personal que trabaja en
                Mentalis
             </p>
          </div>
