@@ -4,12 +4,12 @@
    align-items: center;
    text-align: center;
    margin-top: 0.5rem;
-   background-color: black;
+   background-color: silver;
    padding: 1vh;
    font-size: 1.5vw;
 }
-.footer img {
-   width: 8vw;
+.logoFooter {
+   height: 5vh;
 }
 .footer h3 {
    margin: 0;
