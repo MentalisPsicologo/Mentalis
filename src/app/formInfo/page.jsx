@@ -1,3 +1,5 @@
+import Footer from "@/components/Footer/Footer";
+
 export const metadata = {
    title: "FormInfo - Mentalis",
 };
@@ -5,7 +7,10 @@ export const metadata = {
 export default function FormInfo() {
    return (
       <div>
-         <h2>Formulario de Información</h2>
+         <div>
+            <h2>Formulario de Información</h2>
+         </div>
+         <Footer />
       </div>
    );
 }
