@@ -1,0 +1,10 @@
+.serviceCards {
+   display: flex;
+   flex-wrap: wrap;
+}
+.serviceCard {
+   border: 1px solid black;
+   border-radius: 10px;
+   flex: 1;
+   margin: 10px;
+}
