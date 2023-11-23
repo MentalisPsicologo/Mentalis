@@ -1,6 +1,11 @@
 .contenedor{
-height: 80%;
+height: 80vh;
 align-items: center;
+background-color: #D0EAA3;
+padding-bottom: 0.5rem;
+}
+.contImagen {
+  background-color: white;
 }
 
 .titulo {
