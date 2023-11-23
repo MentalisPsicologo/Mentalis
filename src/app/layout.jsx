@@ -2,7 +2,14 @@ import "./globals.css";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import NavBar from "@/components/NavBar/NavBar";
+import { Montserrat } from "next/font/google";
 config.autoAddCss = false;
+
+const generalFont = Montserrat({
+   weight: ["400", "500", "600", "700"],
+   styles: ["normal", "italic"],
+   subsets: ["latin"],
+});
 
 export const metadata = {
    title: "Mentalis",
@@ -12,7 +19,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
    return (
       <html lang="en">
-         <body>
+         <body className={generalFont.className}>
             <NavBar />
             {children}
          </body>

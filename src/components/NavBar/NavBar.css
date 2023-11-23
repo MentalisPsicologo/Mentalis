@@ -1,7 +1,7 @@
 .navBar {
    background: #FAD8CE;
    display: flex;
-   justify-content: center;
+   justify-content: space-between;
    padding: 0.5rem;
    align-items: center;
 }
@@ -10,7 +10,7 @@
    flex-wrap: wrap;
    justify-content: space-between;
    gap: 0.2rem;
-   width: 90%;
+   width: 80%;
 }
 .boton {
    background-color: #D0EAA3;
@@ -18,7 +18,16 @@
    padding: 0.2rem;
    border-radius: 0.5rem;
    text-decoration: none;
-   width: 45%;
+   width: 44%;
+   font-size: small;
+}
+.contLogo {
+   background-color: rgba(255, 255, 255, 0.601);
+   border: 1px solid black;
+   border-radius: 100%;
+}
+.logoInicio {
+   padding: 5px;
 }
 
 @media screen and (min-width: 768px)  {
@@ -31,5 +40,9 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
+      width: 50%;
+   }
+   .boton {
+      width: 20%;
    }
 }
