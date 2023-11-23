@@ -15,6 +15,16 @@ export default function LandigPage() {
             />
          </div>
          <div>
+            <h4>
+               Eslogan de la empresa, ejemplo: Estamos para ayudarte en lo que
+               necesites
+            </h4>
+            <p>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+               fuga veritatis dignissimos amet soluta suscipit, similique
+               deserunt voluptates praesentium! Excepturi nobis accusamus
+               voluptate sint sit quidem, corrupti ex odio qui.
+            </p>
             <Footer />
          </div>
       </div>
