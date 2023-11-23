@@ -18,6 +18,7 @@ const Footer = () => {
                      width={50}
                      height={50}
                      alt="foto del logo"
+                     className="logoFooter"
                   />
                </a>
             </div>
