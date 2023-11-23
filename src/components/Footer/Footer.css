@@ -4,7 +4,7 @@
    align-items: center;
    text-align: center;
    margin-top: 0.5rem;
-   background-color: silver;
+   background-color: #fad8ce;
    padding: 1vh;
    font-size: 1.5vw;
 }
@@ -16,6 +16,9 @@
 }
 footer p {
    margin: 0;
+}
+.icon {
+   color: black;
 }
 .redes {
    display: flex;
@@ -36,7 +39,7 @@ footer p {
    .footer img {
       width: 15vw;
    }
-    .redes img {
+   .redes img {
       width: 6vw;
    }
 }
@@ -60,7 +63,7 @@ footer p {
 }
 
 @media screen and (min-width: 1440px) {
-   .redes img{
+   .redes img {
       width: 4vw;
    }
 }

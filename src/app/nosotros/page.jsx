@@ -1,4 +1,5 @@
 import AboutUs from "@/components/AboutUs/AboutUs";
+import Footer from "@/components/Footer/Footer";
 
 export const metadata = {
    title: "Nosotros - Mentalis",
@@ -16,6 +17,7 @@ const NosotrosPage = () => {
          </div>
          <hr />
          <AboutUs />
+         <Footer />
       </div>
    );
 };

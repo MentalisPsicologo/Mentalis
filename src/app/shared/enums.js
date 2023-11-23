@@ -55,10 +55,6 @@ export const dataMission = [
 
 export const dataNavbar = [
    {
-      name: "Formulario",
-      url: "/formInfo",
-   },
-   {
       name: "Mentalis",
       url: "/acercaDe",
    },
@@ -69,6 +65,10 @@ export const dataNavbar = [
    {
       name: "Nosotros",
       url: "/nosotros",
+   },
+   {
+      name: "Formulario",
+      url: "/formInfo",
    },
 ];
 

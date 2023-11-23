@@ -1,6 +1,7 @@
 import MissionCard from "@/components/Mentalis/Mission";
 import VisionCard from "@/components/Mentalis/Vision";
 import ObjectiveCard from "@/components/Mentalis/Objective";
+import Footer from "@/components/Footer/Footer";
 
 export const metadata = {
    title: "AcercaDe - Mentalis",
@@ -35,6 +36,7 @@ export default function AcercaDe() {
             </p>
             <ObjectiveCard />
          </div>
+         <Footer />
       </div>
    );
 }

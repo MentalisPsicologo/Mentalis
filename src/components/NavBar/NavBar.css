@@ -1,24 +1,24 @@
 .navBar {
    background: #FAD8CE;
-   flex-direction: column;
    display: flex;
-   justify-content: space-between;
-   padding: 0 3rem;
+   justify-content: center;
+   padding: 0.5rem;
    align-items: center;
 }
 .menus {
    display: flex;
-   flex-direction: column;
+   flex-wrap: wrap;
    justify-content: space-between;
-   gap: 0.5rem;
+   gap: 0.2rem;
+   width: 90%;
 }
 .boton {
    background-color: #D0EAA3;
    border: 2px solid black;
-   width: 10rem;
-   padding: 0.5rem;
+   padding: 0.2rem;
    border-radius: 0.5rem;
    text-decoration: none;
+   width: 45%;
 }
 
 @media screen and (min-width: 768px)  {
