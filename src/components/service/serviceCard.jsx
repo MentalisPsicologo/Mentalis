@@ -4,9 +4,9 @@ import { dataServices } from "@/app/shared/enums";
 
 const ServiceCard = () => {
    return (
-      <div>
+      <div className="serviceCards">
          {dataServices.map((card, index) => (
-            <div key={index}>
+            <div key={index} className="serviceCard">
                <Image
                   src={card.image}
                   width={100}

@@ -1,18 +1,20 @@
 import { dataMission } from "@/app/shared/enums";
 import Image from "next/image";
+import "./Mision.css";
 
 const MissionCard = () => {
    return (
-      <div>
+      <div className="vision">
          {dataMission.map((card, index) => (
             <div key={index}>
                <h3>{card.title}</h3>
                <p>{card.description}</p>
                <Image
                   src={card.image}
-                  width={400}
-                  height={400}
+                  width={250}
+                  height={250}
                   alt="Mision Mentalis"
+                  className="visionImage"
                />
             </div>
          ))}

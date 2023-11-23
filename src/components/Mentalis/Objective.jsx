@@ -3,16 +3,17 @@ import Image from "next/image";
 
 const ObjectiveCard = () => {
    return (
-      <div>
+      <div className="vision">
          {dataObjective.map((card, index) => (
             <div key={index}>
                <h3>{card.title}</h3>
                <p>{card.description}</p>
                <Image
                   src={card.image}
-                  width={400}
-                  height={400}
+                  width={250}
+                  height={250}
                   alt="Objetivos Mentalis"
+                  className="visionImage"
                />
             </div>
          ))}
