@@ -16,15 +16,18 @@ export default function LandigPage() {
                />
             </div>
             <div>
-               <h4>
-                  Eslogan de la empresa, ejemplo: Estamos para ayudarte en lo
-                  que necesites
-               </h4>
+               <h4>Transformando vidas, nutriendo mentes.</h4>
                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Possimus fuga veritatis dignissimos amet soluta suscipit,
-                  similique deserunt voluptates praesentium! Excepturi nobis
-                  accusamus voluptate sint sit quidem, corrupti ex odio qui.
+                  ¡Bienvenido a Mentalis! Somos más que un centro de salud
+                  mental; somos tu compañero en el viaje hacia el bienestar
+                  emocional. En Mentalis, nos dedicamos a proporcionar un apoyo
+                  integral, donde cada individuo es único, y cada historia es
+                  importante. Nuestro equipo de profesionales apasionados está
+                  aquí para guiarte, ofreciendo servicios personalizados que
+                  transforman vidas. Descubre un espacio donde la salud mental
+                  se nutre con compasión, innovación y cuidado excepcional. Da
+                  el primer paso hacia una vida plena en Mentalis: tu destino
+                  para la transformación positiva.
                </p>
             </div>
          </div>

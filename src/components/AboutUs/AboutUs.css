@@ -1,4 +1,15 @@
-.redes {
+.aboutUs {
+   display: flex;
+   flex-wrap: wrap;
+   width: 90%;
+}
+
+.cadaUno {
+   flex: 1;
+   gap: 1rem;
+}
+
+.red {
    display: flex;
    justify-content: space-around;
 }

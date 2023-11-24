@@ -1,7 +1,7 @@
 import { dataObjective } from "@/app/shared/enums";
 import Image from "next/image";
 
-const ObjectiveCard = () => {
+const ObjetiveCard = () => {
    return (
       <div className="vision">
          {dataObjective.map((card, index) => (
@@ -21,4 +21,4 @@ const ObjectiveCard = () => {
    );
 };
 
-export default ObjectiveCard;
+export default ObjetiveCard;
