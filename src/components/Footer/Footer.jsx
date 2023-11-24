@@ -29,27 +29,27 @@ const Footer = () => {
                <h3>&copy; Mentalis Psicologia y Humanidades</h3>
                <p>All rights Reserved • 2023-{new Date().getFullYear()}</p>
             </div>
-            <div className="redes">
+            <div className="redez">
                <a
                   href="https://www.facebook.com/mentalispyh"
                   target="_blank"
                   rel="noopener noreferrer"
                >
-                  <FontAwesomeIcon className="icon" icon={faSquareFacebook} />
+                  <FontAwesomeIcon className="icons" icon={faSquareFacebook} />
                </a>
                <a
                   href="https://www.instagram.com/mentalispyh/"
                   target="_blank"
                   rel="noopener noreferrer"
                >
-                  <FontAwesomeIcon className="icon" icon={faInstagram} />
+                  <FontAwesomeIcon className="icons" icon={faInstagram} />
                </a>
                <a
                   href="https://wa.me/56977499792"
                   target="_blank"
                   rel="noopener noreferrer"
                >
-                  <FontAwesomeIcon className="icon" icon={faWhatsapp} />
+                  <FontAwesomeIcon className="icons" icon={faWhatsapp} />
                </a>
             </div>
          </div>

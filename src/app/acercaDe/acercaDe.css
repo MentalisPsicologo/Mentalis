@@ -1,6 +1,48 @@
 .acercaDe h2 {
+   text-align: center;
    margin: 0;
 }
 .acercaDe p {
    margin: 0;
+}
+
+.visiones {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.visiones div {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   width: 60%;
+   text-align: center;
+}
+
+.mision {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.mision div {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   width: 60%;
+   text-align: center;
+}
+
+.objetivos {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.listaObjetivos {
+   width: 60%;
+   text-align: left;
 }
