@@ -27,7 +27,9 @@ const Footer = () => {
             </div>
             <div>
                <h3>&copy; Mentalis Psicologia y Humanidades</h3>
-               <p>All rights Reserved • 2023-{new Date().getFullYear()}</p>
+               <span>
+                  All rights Reserved • 2023-{new Date().getFullYear()}
+               </span>
             </div>
             <div className="redez">
                <a

@@ -18,16 +18,20 @@ export default function LandigPage() {
             <div>
                <h4>Transformando vidas, nutriendo mentes.</h4>
                <p>
-                  ¡Bienvenido a Mentalis! Somos más que un centro de salud
-                  mental; somos tu compañero en el viaje hacia el bienestar
-                  emocional. En Mentalis, nos dedicamos a proporcionar un apoyo
-                  integral, donde cada individuo es único, y cada historia es
-                  importante. Nuestro equipo de profesionales apasionados está
-                  aquí para guiarte, ofreciendo servicios personalizados que
-                  transforman vidas. Descubre un espacio donde la salud mental
-                  se nutre con compasión, innovación y cuidado excepcional. Da
-                  el primer paso hacia una vida plena en Mentalis: tu destino
-                  para la transformación positiva.
+                  Somos un colectivo de profesionistas, con miras a constituirse
+                  legalmente, a quienes nos une: La certeza de que las personas
+                  tienen la capacidad para transformar y transformarse. Por eso,
+                  apoyamos a nuestros pacientes, clientes, socios y estudiantes
+                  a explotar lo mejor de sí. El deseo de transmitir lo que
+                  sabemos. Por eso, organizamos grupos de estudio, talleres,
+                  conferencias y otros eventos académicos y culturales para
+                  psicólogos en formación y profesiones afines. La convicción de
+                  que nunca terminamos de aprender. Para ello, participamos en
+                  actividades de actualización y desarrollo profesional. La
+                  voluntad de aportar nuestro granito de arena para atender las
+                  necesidades psicosociales. El interés de vivir dignamente de
+                  nuestra profesión. Nos distingue el prestigio y el
+                  profesionalismo. Nuestro trabajo habla por nosotros.
                </p>
             </div>
          </div>
