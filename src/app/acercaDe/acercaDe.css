@@ -4,6 +4,8 @@
 }
 .acercaDe p {
    margin: 0;
+   text-align: justify;
+   background-color: aquamarine;
 }
 
 .visiones {
@@ -17,8 +19,7 @@
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   width: 60%;
-   text-align: center;
+   width: 80%;
 }
 
 .mision {
@@ -32,8 +33,7 @@
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   width: 60%;
-   text-align: center;
+   width: 80%;
 }
 
 .objetivos {
@@ -42,7 +42,10 @@
    justify-content: center;
    align-items: center;
 }
-.listaObjetivos {
-   width: 60%;
-   text-align: left;
+.objetivos div {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   width: 80%;
 }

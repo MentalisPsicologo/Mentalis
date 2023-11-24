@@ -15,13 +15,14 @@ export default function AcercaDe() {
             <div>
                <h2>Visión</h2>
                <p>
-                  En Mentalis, aspiramos a ser líderes en la transformación
-                  positiva de vidas a través de la salud mental. Visualizamos un
-                  mundo donde cada individuo experimenta un bienestar emocional
-                  y psicológico pleno, empoderados por el apoyo integral de
-                  nuestro equipo de profesionales dedicados.
+                  Nos visualizamos como la organización líder de la sociedad
+                  civil en el Altiplano Potosino, destacando por nuestra
+                  excelencia en psicología y humanidades. Buscamos no solo ser
+                  un referente, sino ser reconocidos a nivel nacional e
+                  internacional por nuestro impacto positivo en el bienestar
+                  emocional, el crecimiento personal y el desarrollo social.
                </p>
-               <VisionCard />
+               {/* <VisionCard /> */}
             </div>
          </div>
          <hr />
@@ -29,50 +30,50 @@ export default function AcercaDe() {
             <div>
                <h2>Misión</h2>
                <p>
-                  En Mentalis, nos dedicamos a proporcionar servicios de salud
-                  mental de alta calidad, abordando las necesidades únicas de
-                  cada individuo. A través de enfoques innovadores y una
-                  atención personalizada, buscamos ser un faro de esperanza y
-                  apoyo, guiando a nuestros clientes hacia una vida plena y
-                  satisfactoria.
+                  En Mentalis, nuestra misión es comprometernos con la
+                  facilitación de procesos de cambio que conduzcan a
+                  transformaciones positivas, mientras nos dedicamos
+                  apasionadamente a lo que amamos
                </p>
-               <MissionCard />
+               {/* <MissionCard /> */}
             </div>
          </div>
          <hr />
          <div className="objetivos">
-            <h2>Objetivos</h2>
-            <ul className="listaObjetivos">
-               <li>Brindar Apoyo Integral:</li>
+            <div>
+               <h2>Principios</h2>
                <p>
-                  Proporcionar servicios de salud mental que aborden no solo los
-                  síntomas, sino también las raíces subyacentes de los desafíos
-                  emocionales.
+                  Somos un colectivo de profesionistas, con miras a constituirse
+                  legalmente, a quienes nos une:
                </p>
-               <li>Promover la Diversidad y la Inclusión:</li>
                <p>
-                  Fomentar un ambiente acogedor y diverso donde todas las
-                  identidades sean respetadas y valoradas.
+                  La certeza de que las personas tienen la capacidad para
+                  transformar y transformarse. Por eso, apoyamos a nuestros
+                  pacientes, clientes, socios y estudiantes a explotar lo mejor
+                  de sí.
                </p>
-               <li>Innovación Continua:</li>
                <p>
-                  Buscar constantemente nuevas metodologías y enfoques para
-                  mejorar la eficacia de nuestras intervenciones y adaptarnos a
-                  las necesidades cambiantes.
+                  El deseo de transmitir lo que sabemos. Por eso, organizamos
+                  grupos de estudio, talleres, conferencias y otros eventos
+                  académicos y culturales para psicólogos en formación y
+                  profesiones afines.
                </p>
-               <li>Educación y Concientización:</li>
                <p>
-                  Desarrollar programas educativos para aumentar la conciencia
-                  sobre la salud mental y reducir el estigma asociado.
+                  La convicción de que nunca terminamos de aprender. Para ello,
+                  participamos en actividades de actualización y desarrollo
+                  profesional.
                </p>
-               <li>Colaboración Interdisciplinaria:</li>
                <p>
-                  Trabajar en estrecha colaboración con profesionales de
-                  diversas disciplinas para proporcionar soluciones holísticas a
-                  los desafíos de salud mental.
+                  La voluntad de aportar nuestro granito de arena para atender
+                  las necesidades psicosociales.
                </p>
-            </ul>
-            <ObjetiveCard />
+               <p>
+                  El interés de vivir dignamente de nuestra profesión. Nos
+                  distingue el prestigio y el profesionalismo. Nuestro trabajo
+                  habla por nosotros.
+               </p>
+               {/* <ObjetiveCard /> */}
+            </div>
          </div>
          <Footer />
       </div>
