@@ -8,16 +8,16 @@ export const metadata = {
 
 export default function Servicios() {
    return (
-      <div>
-         <div>
+      <div className="contServ">
+         <div className="contenido">
             <h2>Servicios</h2>
             <p>
                Aca iria una breve descripcion de los servicios que ofrece
                Mentalis
             </p>
+            <hr />
+            <ServiceCard />
          </div>
-         <hr />
-         <ServiceCard />
          <Footer />
       </div>
    );

@@ -1,0 +1,15 @@
+.contServ {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.contenido {
+   width: 85%;
+}
+
+@media screen and (min-width: 768px)  {
+   .contenido {
+      width: 60%;
+   }
+}

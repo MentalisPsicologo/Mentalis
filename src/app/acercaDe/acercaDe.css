@@ -2,10 +2,9 @@
    text-align: center;
    margin: 0;
 }
-.acercaDe p {
+.info {
    margin: 0;
    text-align: justify;
-   background-color: aquamarine;
 }
 
 .visiones {
@@ -19,7 +18,7 @@
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   width: 80%;
+   width:85%;
 }
 
 .mision {
@@ -33,7 +32,7 @@
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   width: 80%;
+   width: 85%;
 }
 
 .objetivos {
@@ -47,5 +46,16 @@
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   width: 80%;
+   width: 85%;
+}
+
+@media screen and (min-width: 768px)  {
+   .visiones div {
+      width: 60%;
+   }.mision div {
+      width: 60%;
+   }
+   .objetivos div {
+      width: 60%;
+   }
 }
