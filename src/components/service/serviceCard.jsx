@@ -1,6 +1,5 @@
 import "./serviceCard.css";
 import Image from "next/image";
-import Link from "next/link";
 import { dataServices } from "@/app/shared/enums";
 
 const ServiceCard = () => {
@@ -16,7 +15,6 @@ const ServiceCard = () => {
                />
                <h3>{card.title}</h3>
                <p>{card.summary}</p>
-               <Link href={`/servicios/${card.id}`}>Leer mas</Link>
             </div>
          ))}
       </div>
