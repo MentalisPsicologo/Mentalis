@@ -5,5 +5,15 @@
    justify-content: center;
 }
 .contNos {
-   width: 60%;
+   width: 85%;
+   text-align: justify;
+}
+.contNos h2 {
+   text-align: center;
+}
+
+@media screen and (min-width: 768px)  {
+   .contNos {
+      width: 60%;
+   }
 }

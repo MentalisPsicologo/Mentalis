@@ -1,7 +1,7 @@
 .navBar {
    background: #FAD8CE;
    display: flex;
-   justify-content: space-between;
+   justify-content: space-evenly;
    padding: 0.5rem;
    align-items: center;
 }
@@ -33,7 +33,7 @@
 @media screen and (min-width: 768px)  {
    .navBar {
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: space-evenly;
       align-items: center;
    }
    .menus {

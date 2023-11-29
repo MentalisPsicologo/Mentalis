@@ -14,7 +14,7 @@ export default function AcercaDe() {
          <div className="visiones">
             <div>
                <h2>Visión</h2>
-               <p>
+               <p className="info">
                   Nos visualizamos como la organización líder de la sociedad
                   civil en el Altiplano Potosino, destacando por nuestra
                   excelencia en psicología y humanidades. Buscamos no solo ser
@@ -29,7 +29,7 @@ export default function AcercaDe() {
          <div className="mision">
             <div>
                <h2>Misión</h2>
-               <p>
+               <p className="info">
                   En Mentalis, nuestra misión es comprometernos con la
                   facilitación de procesos de cambio que conduzcan a
                   transformaciones positivas, mientras nos dedicamos
@@ -42,32 +42,24 @@ export default function AcercaDe() {
          <div className="objetivos">
             <div>
                <h2>Principios</h2>
-               <p>
+               <p className="info">
                   Somos un colectivo de profesionistas, con miras a constituirse
-                  legalmente, a quienes nos une:
-               </p>
-               <p>
+                  legalmente, a quienes nos une: <br />
                   La certeza de que las personas tienen la capacidad para
                   transformar y transformarse. Por eso, apoyamos a nuestros
                   pacientes, clientes, socios y estudiantes a explotar lo mejor
                   de sí.
                </p>
-               <p>
+               <p className="info">
                   El deseo de transmitir lo que sabemos. Por eso, organizamos
                   grupos de estudio, talleres, conferencias y otros eventos
                   académicos y culturales para psicólogos en formación y
-                  profesiones afines.
-               </p>
-               <p>
+                  profesiones afines. <br />
                   La convicción de que nunca terminamos de aprender. Para ello,
                   participamos en actividades de actualización y desarrollo
-                  profesional.
-               </p>
-               <p>
+                  profesional. <br />
                   La voluntad de aportar nuestro granito de arena para atender
-                  las necesidades psicosociales.
-               </p>
-               <p>
+                  las necesidades psicosociales. <br />
                   El interés de vivir dignamente de nuestra profesión. Nos
                   distingue el prestigio y el profesionalismo. Nuestro trabajo
                   habla por nosotros.

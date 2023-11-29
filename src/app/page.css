@@ -1,10 +1,30 @@
 .contenedor{
-align-items: center;
-background-color: #D0EAA3;
-padding-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  justify-content: center;
+  align-items: center;
 }
 .contImagen {
   background-color: white;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: #D0EAA3;
+  width: 100vw;
+}
+.info h4 {
+  text-align: center;
+  margin: 0;
+}
+.infoIntro {
+  margin: 0;
 }
 
 .titulo {
@@ -30,7 +50,16 @@ display: none;
 }
 
 @media screen and (min-width: 768px)  {
+  .infoIntro {
+    width: 60%;
+  }
   .logoLandingPage {
     width: 60%;
+  }
+}
+
+@media screen and (min-width: 2000px)  {
+  .infoIntro {
+    width: 50%;
   }
 }
