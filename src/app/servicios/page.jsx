@@ -1,7 +1,7 @@
 import Footer from "@/components/Footer/Footer";
-import ServiceCard from "@/components/service/serviceCard";
+import ServiceCard from "@/components/service/ServiceCard";
 import "./servicios.css";
-
+import { dataServices } from "../shared/enums";
 export const metadata = {
    title: "Servicios - Mentalis",
 };
