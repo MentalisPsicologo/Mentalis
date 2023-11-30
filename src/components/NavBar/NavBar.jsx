@@ -10,7 +10,7 @@ const NavBar = () => {
    const isHome = pathname === "/";
 
    return (
-      <div>
+      <div className="contNav">
          <nav className="navBar ">
             <Link href="/" className="contLogo">
                {/* {!isHome && ( */}

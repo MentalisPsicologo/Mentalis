@@ -17,9 +17,8 @@
   align-items: center;
   padding: 1rem;
   background-color: #D0EAA3;
-  width: 100vw;
 }
-.info h4 {
+.introTitulo {
   text-align: center;
   margin: 0;
 }
@@ -51,7 +50,7 @@ display: none;
 
 @media screen and (min-width: 768px)  {
   .infoIntro {
-    width: 60%;
+    width: 80%;
   }
   .logoLandingPage {
     width: 60%;
@@ -60,6 +59,6 @@ display: none;
 
 @media screen and (min-width: 2000px)  {
   .infoIntro {
-    width: 50%;
+    width: 60%;
   }
 }

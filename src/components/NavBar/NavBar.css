@@ -1,9 +1,16 @@
-.navBar {
+.contNav {
    background: #FAD8CE;
    display: flex;
-   justify-content: space-evenly;
+   justify-content: center;
+   align-items: center;
+}
+
+.navBar {
+   display: flex;
+   justify-content: space-between;
    padding: 0.5rem;
    align-items: center;
+   width: 90%;
 }
 .menus {
    display: flex;
@@ -33,7 +40,7 @@
 @media screen and (min-width: 768px)  {
    .navBar {
       flex-direction: row;
-      justify-content: space-evenly;
+      justify-content: space-between;
       align-items: center;
    }
    .menus {
