@@ -1,5 +1,4 @@
-import Footer from "@/components/Footer/Footer";
-import ServiceCard from "@/components/service/ServiceCard";
+import ServiceCard from "../../components/service/serviceCard";
 import "./servicios.css";
 
 export const metadata = {
