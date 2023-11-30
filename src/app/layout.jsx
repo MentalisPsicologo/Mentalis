@@ -3,6 +3,7 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import NavBar from "@/components/NavBar/NavBar";
 import { Montserrat } from "next/font/google";
+import Footer from "@/components/Footer/Footer";
 config.autoAddCss = false;
 
 const generalFont = Montserrat({
@@ -20,8 +21,13 @@ export default function RootLayout({ children }) {
    return (
       <html lang="en">
          <body className={generalFont.className}>
-            <NavBar />
-            {children}
+            <div>
+               <NavBar />
+            </div>
+            <div className="children">{children}</div>
+            <div>
+               <Footer />
+            </div>
          </body>
       </html>
    );

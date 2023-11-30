@@ -68,7 +68,6 @@ const NosotrosPage = () => {
             </div>
             <hr />
             <AboutUs />
-            <Footer />
          </div>
       </div>
    );

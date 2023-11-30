@@ -1,5 +1,4 @@
-import Footer from "@/components/Footer/Footer";
-import ServiceCard from "@/components/Service/ServiceCard";
+import ServiceCard from "../../components/service/serviceCard";
 import "./servicios.css";
 
 export const metadata = {
@@ -18,7 +17,6 @@ export default function Servicios() {
             <hr />
             <ServiceCard />
          </div>
-         <Footer />
       </div>
    );
 }
