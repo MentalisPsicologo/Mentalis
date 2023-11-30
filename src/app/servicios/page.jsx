@@ -18,7 +18,6 @@ export default function Servicios() {
             <hr />
             <ServiceCard />
          </div>
-         <Footer />
       </div>
    );
 }

@@ -67,7 +67,6 @@ export default function AcercaDe() {
                {/* <ObjetiveCard /> */}
             </div>
          </div>
-         <Footer />
       </div>
    );
 }

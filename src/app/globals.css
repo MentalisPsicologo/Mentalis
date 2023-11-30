@@ -1,5 +1,16 @@
+html,
 body {
    margin: 0;
    padding: 0;
-   text-align: center;
+   height: 100%;
+}
+
+body {
+   display: flex;
+   flex-direction: column;
+}
+
+.children {
+   flex: 1;
+   overflow-y: auto;
 }

@@ -16,7 +16,9 @@ export default function LandigPage() {
                />
             </div>
             <div className="intro">
-               <h4>Transformando vidas, nutriendo mentes.</h4>
+               <h4 className="introTitulo">
+                  Transformando vidas, nutriendo mentes.
+               </h4>
                <p className="infoIntro">
                   Somos un colectivo de profesionistas, con miras a constituirse
                   legalmente, a quienes nos une:
@@ -44,7 +46,6 @@ export default function LandigPage() {
                </p>
             </div>
          </div>
-         <Footer />
       </div>
    );
 }

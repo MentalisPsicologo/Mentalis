@@ -10,7 +10,6 @@ export default function FormInfo() {
          <div>
             <h2>Formulario de Información</h2>
          </div>
-         <Footer />
       </div>
    );
 }
