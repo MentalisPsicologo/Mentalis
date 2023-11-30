@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import "./Form.css";
 
 //Aca se crea el componente del formulario con sus respectivos campos y validaciones.
 const FormCard = () => {
@@ -155,74 +156,77 @@ const FormCard = () => {
    );
 
    return (
-      <form>
-         {successMessage && <p>{successMessage}</p>}
-         <label>
-            Nombre:
-            <input
-               type="text"
-               placeholder="Agrega tu nombre"
-               name="firstName"
-               value={formData.firstName}
-               onChange={handleInputChange}
-            />
-            {formErrors.firstName && <p>{formErrors.firstName}</p>}
-         </label>
-         <br />
-         <label>
-            Apellido:
-            <input
-               type="text"
-               name="lastName"
-               placeholder="Agrega tu apellido"
-               value={formData.lastName}
-               onChange={handleInputChange}
-            />
-            {formErrors.lastName && <p>{formErrors.lastName}</p>}
-         </label>
-         <br />
-         <label>
-            Teléfono:
-            <input
-               type="text"
-               placeholder="Agrega tu numero de telefono"
-               name="phone"
-               value={formData.phone}
-               onChange={handleInputChange}
-            />
-            {formErrors.phone && <p>{formErrors.phone}</p>}
-         </label>
-         <br />
-         <label>
-            Email:
-            <input
-               type="email"
-               placeholder="Agrega tu Email"
-               name="email"
-               value={formData.email}
-               onChange={handleInputChange}
-            />
-            {formErrors.email && <p>{formErrors.email}</p>}
-         </label>
-         <br />
-         <label>
-            Descripción:
-            <textarea
-               name="description"
-               placeholder="Agrega aqui tu descripcion"
-               value={formData.description}
-               onChange={handleInputChange}
-            />
-            {formErrors.description && <p>{formErrors.description}</p>}
-         </label>
-         <br />
-         <button
-            onClick={handleSendForm}
-            disabled={loading || isSubmitDisabled}
-         >
-            {loading ? "Enviando..." : "Enviar Consulta"}
-         </button>
-      </form>
+      <div className="formContent">
+         <form className="form">
+            {successMessage && <p>{successMessage}</p>}
+            <div className="inputBox">
+               <label>Nombre:</label>
+               <input
+                  type="text"
+                  placeholder="Agrega tu nombre"
+                  name="firstName"
+                  value={formData.firstName}
+                  onChange={handleInputChange}
+               />
+               {formErrors.firstName && <p>{formErrors.firstName}</p>}
+            </div>
+            <div className="inputBox">
+               <label>Apellido:</label>
+               <input
+                  type="text"
+                  name="lastName"
+                  placeholder="Agrega tu apellido"
+                  value={formData.lastName}
+                  onChange={handleInputChange}
+               />
+               {formErrors.lastName && <p>{formErrors.lastName}</p>}
+            </div>
+            <br />
+            <div className="inputBox">
+               <label>
+                  Teléfono:
+                  <input
+                     type="text"
+                     placeholder="Agrega tu numero de telefono"
+                     name="phone"
+                     value={formData.phone}
+                     onChange={handleInputChange}
+                  />
+                  {formErrors.phone && <p>{formErrors.phone}</p>}
+               </label>
+               <br />
+               <label>
+                  Email:
+                  <input
+                     type="email"
+                     placeholder="Agrega tu Email"
+                     name="email"
+                     value={formData.email}
+                     onChange={handleInputChange}
+                  />
+                  {formErrors.email && <p>{formErrors.email}</p>}
+               </label>
+            </div>
+            <br />
+            <label>
+               Descripción:
+               <textarea
+                  name="description"
+                  placeholder="Agrega aqui tu descripcion"
+                  value={formData.description}
+                  onChange={handleInputChange}
+               />
+               {formErrors.description && <p>{formErrors.description}</p>}
+            </label>
+            <br />
+            <button
+               onClick={handleSendForm}
+               disabled={loading || isSubmitDisabled}
+            >
+               {loading ? "Enviando..." : "Enviar Consulta"}
+            </button>
+         </form>
+      </div>
    );
 };
 
