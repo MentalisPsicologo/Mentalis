@@ -1,4 +1,3 @@
-import Footer from "@/components/Footer/Footer";
 import FormCard from "@/components/Form/Form";
 
 export const metadata = {
