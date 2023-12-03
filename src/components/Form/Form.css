@@ -15,7 +15,7 @@
    position: relative;
    max-width: 500px;
    width: 100%;
-   background: #FCEDDA;
+   background: #D0EAA3;
    padding: 25px;
    border-radius: 8px;
    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
@@ -26,4 +26,31 @@
    width: 100%;
    display: flex;
    flex-direction: column;
+}
+
+.formButton {
+   margin-top: 1rem;
+   display: flex;
+   justify-content: right;
+   align-items: center;
+}
+
+.phoneNumber {
+   background-color: aqua;
+   width: fit-content;
+}
+
+.formErrors {
+   color: red;
+   font-size: 0.6rem;
+   margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+   
+   .inputColumn {
+      display: flex;
+      gap: 1rem;
+   }
+
 }

@@ -18,7 +18,13 @@
    justify-content: space-between;
    gap: 0.2rem;
    width: 80%;
+   text-align: center;
+   font-style: italic;
 }
+.menus :hover {
+   font-weight: bold;
+}
+
 .boton {
    background-color: #D0EAA3;
    border: 2px solid black;
@@ -27,6 +33,11 @@
    text-decoration: none;
    width: 44%;
    font-size: small;
+}
+.boton.activo {
+   background-color: #FAD8CE;
+   color: blue;
+   font-weight: bold;
 }
 .contLogo {
    background-color: rgba(255, 255, 255, 0.601);

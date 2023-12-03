@@ -67,7 +67,7 @@ export const dataNavbar = [
       url: "/nosotros",
    },
    {
-      name: "Formulario",
+      name: "Contáctanos",
       url: "/formInfo",
    },
 ];
