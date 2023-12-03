@@ -16,7 +16,7 @@
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  background-color: #D0EAA3;
+  background-color: var(--verde-color);
 }
 .introTitulo {
   text-align: center;

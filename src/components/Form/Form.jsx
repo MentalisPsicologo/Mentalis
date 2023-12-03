@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import PhoneInput from "react-phone-number-input";
+import "../service/Paleta.css";
 
 import "./Form.css";
 import PhoneNumberValidation from "../PhoneNumberValidation/PhoneNumberValidation";
