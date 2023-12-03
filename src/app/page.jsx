@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import "./page.css";
-import Footer from "@/components/Footer/Footer";
+import "../components/service/Paleta.css";
 
 export default function LandigPage() {
    const logo = "./Logo.jpeg";

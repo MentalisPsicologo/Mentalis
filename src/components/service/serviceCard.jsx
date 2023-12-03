@@ -1,4 +1,5 @@
 import "./serviceCard.css";
+import "../service/Paleta.css";
 import Image from "next/image";
 import Link from "next/link";
 import { dataServices } from "@/app/shared/enums";
@@ -14,8 +15,16 @@ const ServiceCard = () => {
                   height={100}
                   alt="Img logo servicos"
                />
-               <h3>{card.title}</h3>
-               <p>{card.summary}</p>
+               <h4 className="cardTitle">
+                  {card.title.length > 20
+                     ? `${card.title.slice(0, 28)}...`
+                     : card.title}
+               </h4>
+               <p>
+                  {card.summary.length > 100
+                     ? `${card.summary.slice(0, 100)}...`
+                     : card.summary}
+               </p>
                <Link href={`/servicios/${card.id}`}>Leer mas</Link>
             </div>
          ))}

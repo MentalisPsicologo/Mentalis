@@ -1,20 +1,73 @@
 .aboutUs {
    display: flex;
+   justify-content: center;
+   flex-direction: column;
    flex-wrap: wrap;
    width: 90%;
+   gap: 0.5rem;
 }
 
 .cadaUno {
-   flex: 1;
-   gap: 1rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   border: black solid 1px;
+   border-radius: 10px;
+   padding: 0.5rem;
+   background-color: var(--rosa-color);
+}
+.cadaUno h3 {
+   margin: 0;
+}
+.cadaUno h5 {
+   margin: 0;
+}
+.presenta {
+   margin: 0;
+   text-align: justify;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 5;
+   -webkit-box-orient: vertical;
+}
+.showFullText {
+   -webkit-line-clamp: unset;
+}
+.readMoreBtn {
+   background-color: var(--verde-color);
+   color: blue;
+   padding: 8px 12px;
+   cursor: pointer;
+   border: none;
+   outline: none;
 }
 
 .red {
    display: flex;
+   width: 10rem;
    justify-content: space-around;
+   font-size: 2rem;
+   text-decoration: none;
+}
+.red a:visited {
+   color: blue;
+}
+.red a:hover {
+   color: black;
 }
 
-.icon{
-   height: 5rem;
-   color: #D0EAA3;
+@media screen and (min-width: 768px) {
+   .aboutUs {
+      width: 80%;
+      flex-direction: row;
+      justify-content: center;
+   }
+   .cadaUno {
+      width: 35%;
+   }
+   .fotoNos {
+      width: 80%;
+      height: auto;
+   }
 }

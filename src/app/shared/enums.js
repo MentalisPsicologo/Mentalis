@@ -1,21 +1,42 @@
 export const dataAboutUs = [
    {
-      name: "Carlos",
-      Profession: "Psicologo",
+      name: "Adelaida Rangel",
+      Profession: "Psicologa",
+      Presentación1:
+         "Estudió psicología en la Universidad de Matehuala y terminó su formación en la Universidad Nacional Autónoma de México (UNAM) donde realizó su seminario de titulación.",
+      Presentación2:
+         "Tiene preparación en psicoterapia con enfoque cognitivo conductual, primeros auxilios psicológicos e intervenciones breves remotas. Además, cuenta con conocimientos en habilidades directivas y desarrollo profesional, marketing y administración de consultorios, derechos humanos con enfoque de género y una certificación en educación inclusiva.",
+      Presentación3:
+         "Ha trabajado como responsable del área de tutoría y psicopedagogía en la Universidad de Matehuala y ha sido psicoterapeuta en la Clínica Psicológica del Altiplano y en Tlanesi Psicología. Tiene experiencia como docente en el Colegio Cultural Metropolitano, la Universidad de Matehuala y el Instituto de Capacitación Académica Intensiva.",
+      Presentación4:
+         "Ha colaborado en distintas empresas como psicóloga organizacional en diferentes áreas de recursos humanos",
+      Presentación5: "",
       URlTwitter: "https://twitter.com/carlos",
       URLLinkedIn: "https://www.linkedin.com/in/morillocd/",
-      image: "https://i.pinimg.com/564x/9a/03/d0/9a03d0f5eeeca9056f6c94544490ce8e.jpg",
+      image: "https://i.pinimg.com/564x/f7/02/19/f702190017e47290c419b22f7c0c70f3.jpg",
    },
    {
-      name: "Maria",
-      Profession: "Psicologa",
+      name: "Pablo Armijo",
+      Profession: "Psicologo",
+      Presentación1:
+         "Licenciado en Psicología por la Universidad Autónoma de Nuevo León. Estudió una maestría en Trabajo Social con orientación en proyectos sociales. Ha completado su formación en cursos, diplomados y grupos de estudio en temas de educación, psicoanálisis, grupos operativos, psicología social, sociología, entre otros.",
+      Presentación2:
+         "Ha trabajado como docente de nivel medio superior y superior. Tiene experiencia de trabajo en comunidades en distintas organizaciones de la sociedad civil.",
+      Presentación3: "",
+      Presentación4: "",
+      Presentación5: "",
       URlTwitter: "https://twitter.com/MariaMari0nette",
       URLLinkedIn: "https://www.linkedin.com/in/jesurenm/",
-      image: "https://i.pinimg.com/564x/f7/02/19/f702190017e47290c419b22f7c0c70f3.jpg",
+      image: "https://i.pinimg.com/564x/9a/03/d0/9a03d0f5eeeca9056f6c94544490ce8e.jpg",
    },
    /* {
       name: "",
       Profession: "",
+      Presentación1: "",
+      Presentación2: "",
+      Presentación3: "",
+      Presentación4: "",
+      Presentación5: "",
       URlTwitter: "",
       URLLinkedIn: "",
       image: "",
@@ -23,10 +44,16 @@ export const dataAboutUs = [
    {
       name: "",
       Profession: "",
+      Presentación1: "",
+      Presentación2: "",
+      Presentación3: "",
+      Presentación4: "",
+      Presentación5: "",
       URlTwitter: "",
       URLLinkedIn: "",
       image: "",
-   }, */
+   },
+   , */
 ];
 
 /* export const dataFooter = [

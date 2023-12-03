@@ -1,5 +1,5 @@
 .contNav {
-   background: #FAD8CE;
+   background: var(--durazno-color);
    display: flex;
    justify-content: center;
    align-items: center;
@@ -26,7 +26,7 @@
 }
 
 .boton {
-   background-color: #D0EAA3;
+   background-color: var(--verde-color);
    border: 2px solid black;
    padding: 0.2rem;
    border-radius: 0.5rem;
@@ -35,7 +35,7 @@
    font-size: small;
 }
 .boton.activo {
-   background-color: #FAD8CE;
+   background-color: var(--rosa-color);
    color: blue;
    font-weight: bold;
 }
