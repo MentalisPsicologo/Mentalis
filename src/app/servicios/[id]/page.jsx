@@ -1,5 +1,5 @@
 import Footer from "@/components/Footer/Footer";
-import ServiceDetail from "@/components/service/ServiceDetail";
+import ServiceDetail from "../../../components/service/ServiceDetail";
 
 const serviceId = () => {
    return (
