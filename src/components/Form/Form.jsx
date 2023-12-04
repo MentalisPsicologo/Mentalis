@@ -9,87 +9,80 @@ import PhoneNumberValidation from "../PhoneNumberValidation/PhoneNumberValidatio
 const FormCard = () => {
    const [loading, setLoading] = useState(false);
    const [successMessage, setSuccessMessage] = useState("");
-
    const [formErrors, setFormErrors] = useState({
-      firstName: "Campo obligatorio",
+      firstName: "*",
       lastName: "",
       phone: "",
       email: "",
       description: "",
    });
 
+   let errorMessage = "";
    const [formData, setFormData] = useState({
       firstName: "",
       lastName: "",
-      phone: "",
+      phone: "+52",
       email: "",
       description: "",
    });
    //maneja cambios en los campos del formulario
    const handleInputChange = (event) => {
-      console.log(event.target.value);
       const { name, value } = event.target;
       //Actualiza el estado del formulario
       setFormData((prevData) => ({
          ...prevData,
          [name]: value,
       }));
+
       //valida y actualiza estado de los errores
       validateField(name, value);
+      setFormErrors((prevData) => ({
+         ...prevData,
+         [name]: errorMessage,
+      }));
    };
 
    //valida campos en especifico
    const validateField = (fieldName, value) => {
-      let errorMessage = "";
       const regexOnlyEmail =
          /*  /^[\wñ.-]+@[a-zA-Zñ\d.-]+\.[a-zA-Zñ]{2,}$/; */
          /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-ZñÑ\-0-9]+\.)+[a-zA-ZñÑ]{2,}))$/;
       const regexOnlyLetters = /^[a-zA-ZáéíóúüÁÉÍÓÚÜñÑ\s]+$/;
       const regexOnlyNumbers = /^\+?\d+$/;
 
-      if (!value.trim()) {
-         errorMessage = "Campo obligatorio.";
-      }
+      // if (!value.trim()) {
+      //    errorMessage = "Campo obligatorio.";
+      // }
 
       if (fieldName === "firstName") {
          if (value.length === 0) {
+            setFormErrors({ firstName: "error" });
+
             errorMessage = "Por favor ingrese su nombre";
          } else if (!regexOnlyLetters.test(value) || value.length <= 2) {
             errorMessage =
                "Por favor ingrese su nombre sin numeros o caracteres especiales.";
-         } else if (value.length > 20) {
-            errorMessage = "El nombre no puede ser mayor a 20 caracteres.";
+         } else if (value.length > 30) {
+            errorMessage = "El nombre no puede ser mayor a 30 caracteres.";
          } else {
-            errorMessage = "";
+            setFormErrors({ firstName: "error" });
          }
       }
 
       if (fieldName === "lastName") {
          if (value.length === 0) {
+            errorMessage = "Por favor ingrese su nombre";
             errorMessage = "Por favor ingrese su apellido";
          } else if (!regexOnlyLetters.test(value) || value.length <= 2) {
-            errorMessage =
-               "Por favor ingrese su apellido numeros o caracteres especiales.";
-         } else if (value.length > 20) {
-            errorMessage = "El apellido no puede ser mayor a 20 caracteres.";
+            errorMessage = "El apellido ingresado no es válido.";
+         } else if (value.length > 30) {
+            errorMessage = "El apellido no puede ser mayor a 30 caracteres.";
          } else {
-            errorMessage = "";
+            setFormErrors({ lastName: "error" });
          }
       }
 
       if (fieldName === "phone") {
-         const cleanedPhoneNumber = value.replace(/\s/g, "");
-         if (cleanedPhoneNumber.length === 0) {
-            errorMessage = "Por favor ingrese su numero de telefono";
-         } else if (!regexOnlyNumbers.test(cleanedPhoneNumber)) {
-            errorMessage =
-               "Por favor ingrese su numero telefonico sin letras o caracteres especiales.";
-         } else if (cleanedPhoneNumber.length > 12) {
-            errorMessage =
-               "El numero telefonico no puede ser mayor a 12 caracteres.";
-         } else {
-            errorMessage = "";
-         }
       }
 
       if (fieldName === "email") {
@@ -110,8 +103,7 @@ const FormCard = () => {
          if (trimmedValue.length === 0) {
             errorMessage = "Por favor ingrese su consulta";
          } else if (trimmedValue.length > 10000) {
-            errorMessage =
-               "los datos ingresados superan el limite de caracteres soportados por la app";
+            errorMessage = "La consulta no debe superar los 10000 caracteres";
          }
       }
       setFormErrors((prevErrors) => ({
@@ -121,6 +113,8 @@ const FormCard = () => {
    };
 
    const handleSendForm = async () => {
+      console.log(formData);
+
       try {
          setLoading(true);
          const route = process.env.NEXT_PUBLIC_PATH;
@@ -134,12 +128,11 @@ const FormCard = () => {
          });
 
          const data = await res.json();
-         console.log(data);
          if (res.ok) {
             setFormData({
                firstName: "",
                lastName: "",
-               phone: "",
+               phone: "+52",
                email: "",
                description: "",
             });
@@ -160,8 +153,7 @@ const FormCard = () => {
    const isSubmitDisabled = Object.values(formErrors).some(
       (error) => error !== ""
    );
-
-   const [value, setValue] = useState();
+   console.log(isSubmitDisabled, loading);
 
    return (
       <div className="formContent">
