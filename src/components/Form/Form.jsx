@@ -77,6 +77,7 @@ const FormCard = () => {
       }
 
       if (fieldName === "phone") {
+         console.log(value);
          const cleanedPhoneNumber = value.replace(/\s/g, "");
          if (cleanedPhoneNumber.length === 0) {
             errorMessage = "Por favor ingrese su numero de telefono";

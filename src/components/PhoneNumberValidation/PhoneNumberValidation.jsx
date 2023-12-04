@@ -9,6 +9,7 @@ export default function PhoneNumberValidation() {
    const handleChange = (value) => {
       setPhoneNumber(value);
       setIsValid(validatePhoneNumber(value));
+      console.log(PhoneNumber);
    };
 
    const validatePhoneNumber = (phoneNumber) => {
