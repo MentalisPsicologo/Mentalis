@@ -27,6 +27,7 @@ const FormCard = () => {
    });
    //maneja cambios en los campos del formulario
    const handleInputChange = (event) => {
+      console.log(event.target.value);
       const { name, value } = event.target;
       //Actualiza el estado del formulario
       setFormData((prevData) => ({
@@ -196,7 +197,16 @@ const FormCard = () => {
             <div className="inputBox">
                <label>Teléfono:</label>
                <div className="custom-phone-input">
-                  <PhoneNumberValidation></PhoneNumberValidation>
+                  <PhoneNumberValidation
+                     phoneNumberValue={formData.phone}
+                     onPhoneNumberChange={(value) => {
+                        setFormData((prevData) => ({
+                           ...prevData,
+                           phone: value,
+                        }));
+                        validateField("phone", value);
+                     }}
+                  />
                </div>
                {formErrors.phone && (
                   <p className="formErrors">{formErrors.phone}</p>
