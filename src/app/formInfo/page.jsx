@@ -8,7 +8,7 @@ const FormInfo = () => {
    return (
       <div>
          <div>
-            <h2 className="formTitle">Formulario de Información</h2>
+            <h2 className="formTitle">Déjanos tu consulta</h2>
             <FormCard />
          </div>
       </div>

@@ -8,8 +8,13 @@
    width: 85%;
    text-align: justify;
 }
-.contNos h2 {
+.titleH2 {
+   font-family: "Playfair";
+   font-weight: 900;
    text-align: center;
+}
+.textoNormal {
+   font-family: "generalFont", sans-serif;
 }
 
 @media screen and (min-width: 768px)  {

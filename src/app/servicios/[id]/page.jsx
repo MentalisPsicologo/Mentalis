@@ -1,4 +1,4 @@
-import ServiceDetail from "../../../components/Service/ServiceDetail";
+import ServiceDetail from "../../../components/service/ServiceDetail";
 
 const serviceId = () => {
    return (

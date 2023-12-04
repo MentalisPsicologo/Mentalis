@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import "./page.css";
-import Footer from "@/components/Footer/Footer";
+import "../components/service/Paleta.css";
 
 export default function LandigPage() {
    const logo = "./Logo.jpeg";
@@ -16,9 +16,9 @@ export default function LandigPage() {
                />
             </div>
             <div className="intro">
-               <h4 className="introTitulo">
-                  Transformando vidas, nutriendo mentes.
-               </h4>
+               <h2 className="introTitulo">
+                  TRANSFORMADO VIDAS, NUTRIENDO MENTES.
+               </h2>
                <p className="infoIntro">
                   Somos un colectivo de profesionistas, con miras a constituirse
                   legalmente, a quienes nos une:

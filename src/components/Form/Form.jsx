@@ -1,6 +1,9 @@
 "use client";
 import { useState } from "react";
+import "../service/Paleta.css";
+
 import "./Form.css";
+import PhoneNumberValidation from "../PhoneNumberValidation/PhoneNumberValidation";
 
 //Aca se crea el componente del formulario con sus respectivos campos y validaciones.
 const FormCard = () => {
@@ -157,6 +160,8 @@ const FormCard = () => {
       (error) => error !== ""
    );
 
+   const [value, setValue] = useState();
+
    return (
       <div className="formContent">
          <form className="form">
@@ -170,7 +175,9 @@ const FormCard = () => {
                   value={formData.firstName}
                   onChange={handleInputChange}
                />
-               {formErrors.firstName && <p>{formErrors.firstName}</p>}
+               {formErrors.firstName && (
+                  <p className="formErrors">{formErrors.firstName}</p>
+               )}
             </div>
             <div className="inputBox">
                <label>Apellido:</label>
@@ -181,52 +188,53 @@ const FormCard = () => {
                   value={formData.lastName}
                   onChange={handleInputChange}
                />
-               {formErrors.lastName && <p>{formErrors.lastName}</p>}
+               {formErrors.lastName && (
+                  <p className="formErrors">{formErrors.lastName}</p>
+               )}
             </div>
-            <br />
             <div className="inputBox">
-               <label>
-                  Teléfono:
-                  <input
-                     type="text"
-                     placeholder="Agrega tu numero de telefono"
-                     name="phone"
-                     value={formData.phone}
-                     onChange={handleInputChange}
-                  />
-                  {formErrors.phone && <p>{formErrors.phone}</p>}
-               </label>
-               <br />
-               <label>
-                  Email:
-                  <input
-                     type="email"
-                     placeholder="Agrega tu Email"
-                     name="email"
-                     value={formData.email}
-                     onChange={handleInputChange}
-                  />
-                  {formErrors.email && <p>{formErrors.email}</p>}
-               </label>
+               <label>Teléfono:</label>
+               <div className="custom-phone-input">
+                  <PhoneNumberValidation></PhoneNumberValidation>
+               </div>
+               {formErrors.phone && (
+                  <p className="formErrors">{formErrors.phone}</p>
+               )}
             </div>
-            <br />
-            <label>
-               Descripción:
-               <textarea
-                  name="description"
-                  placeholder="Agrega aqui tu descripcion"
-                  value={formData.description}
+            <div className="inputBox">
+               <label>Email:</label>
+               <input
+                  type="email"
+                  placeholder="Agrega tu Email"
+                  name="email"
+                  value={formData.email}
                   onChange={handleInputChange}
                />
-               {formErrors.description && <p>{formErrors.description}</p>}
-            </label>
-            <br />
-            <button
-               onClick={handleSendForm}
-               disabled={loading || isSubmitDisabled}
-            >
-               {loading ? "Enviando..." : "Enviar Consulta"}
-            </button>
+               {formErrors.email && (
+                  <p className="formErrors">{formErrors.email}</p>
+               )}
+            </div>
+            <div className="inputBox">
+               <label>Consulta:</label>
+               <textarea
+                  name="description"
+                  placeholder="Agrega aqui tu cunsulta y a la brevedad nos couminicaremos contigo"
+                  value={formData.description}
+                  onChange={handleInputChange}
+                  rows="5"
+               />
+               {formErrors.description && (
+                  <p className="formErrors">{formErrors.description}</p>
+               )}
+            </div>
+            <div className="formButton">
+               <button
+                  onClick={handleSendForm}
+                  disabled={loading || isSubmitDisabled}
+               >
+                  {loading ? "Enviando..." : "Enviar Consulta"}
+               </button>
+            </div>
          </form>
       </div>
    );

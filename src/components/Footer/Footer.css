@@ -3,7 +3,7 @@
    justify-content: space-evenly;
    align-items: center;
    text-align: center;
-   background-color: #fad8ce;
+   background-color: var(--durazno-color);
    padding: 1vh;
    font-size: 1.5vw;
 }

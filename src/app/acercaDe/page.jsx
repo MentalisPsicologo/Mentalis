@@ -1,7 +1,6 @@
 import MissionCard from "@/components/Mentalis/Mission";
 import VisionCard from "@/components/Mentalis/Vision";
 import ObjetiveCard from "@/components/Mentalis/Objetive";
-import Footer from "@/components/Footer/Footer";
 import "./acercaDe.css";
 
 export const metadata = {
