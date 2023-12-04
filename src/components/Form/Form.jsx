@@ -11,7 +11,7 @@ const FormCard = () => {
    const [successMessage, setSuccessMessage] = useState("");
 
    const [formErrors, setFormErrors] = useState({
-      firstName: "",
+      firstName: "Campo obligatorio",
       lastName: "",
       phone: "",
       email: "",
@@ -43,7 +43,7 @@ const FormCard = () => {
       const regexOnlyEmail =
          /*  /^[\wñ.-]+@[a-zA-Zñ\d.-]+\.[a-zA-Zñ]{2,}$/; */
          /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-ZñÑ\-0-9]+\.)+[a-zA-ZñÑ]{2,}))$/;
-      const regexOnlyLetters = /^[a-zA-ZáéíóúüÁÉÍÓÚÜñÑ]+$/;
+      const regexOnlyLetters = /^[a-zA-ZáéíóúüÁÉÍÓÚÜñÑ\s]+$/;
       const regexOnlyNumbers = /^\+?\d+$/;
 
       if (!value.trim()) {
@@ -55,7 +55,7 @@ const FormCard = () => {
             errorMessage = "Por favor ingrese su nombre";
          } else if (!regexOnlyLetters.test(value) || value.length <= 2) {
             errorMessage =
-               "Por favor ingrese su nombre sin espacios, numeros o caracteres especiales.";
+               "Por favor ingrese su nombre sin numeros o caracteres especiales.";
          } else if (value.length > 20) {
             errorMessage = "El nombre no puede ser mayor a 20 caracteres.";
          } else {
@@ -68,7 +68,7 @@ const FormCard = () => {
             errorMessage = "Por favor ingrese su apellido";
          } else if (!regexOnlyLetters.test(value) || value.length <= 2) {
             errorMessage =
-               "Por favor ingrese su apellido sin espacios, numeros o caracteres especiales.";
+               "Por favor ingrese su apellido numeros o caracteres especiales.";
          } else if (value.length > 20) {
             errorMessage = "El apellido no puede ser mayor a 20 caracteres.";
          } else {
@@ -123,7 +123,9 @@ const FormCard = () => {
    const handleSendForm = async () => {
       try {
          setLoading(true);
-         const res = await fetch("http://localhost:3000/api/send", {
+         const route = process.env.NEXT_PUBLIC_PATH;
+
+         const res = await fetch(route, {
             method: "POST",
             headers: {
                "Content-Type": "application/json",
