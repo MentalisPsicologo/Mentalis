@@ -3,12 +3,14 @@ import React, { useState } from "react";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 
-export default function PhoneNumberValidation() {
-   const [PhoneNumber, setPhoneNumber] = useState("");
+export default function PhoneNumberValidation({
+   phoneNumberValue,
+   onPhoneNumberChange,
+}) {
    const [isValid, setIsValid] = useState(true);
 
    const handleChange = (value) => {
-      setPhoneNumber(value);
+      onPhoneNumberChange(value);
       setIsValid(validatePhoneNumber(value));
    };
 
@@ -22,7 +24,7 @@ export default function PhoneNumberValidation() {
          <PhoneInput
             country="mx"
             type="text"
-            value={PhoneNumber}
+            value={phoneNumberValue}
             onChange={handleChange}
             inputProps={{ required: true }}
             containerClass="custom-container-class"
