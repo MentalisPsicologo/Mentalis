@@ -28,8 +28,8 @@ const AboutUs = () => {
                   alt="foto de perfil"
                   className="fotoNos"
                />
-               <h3>{card.name}</h3>
-               <h5>{card.Profession}</h5>
+               <h2 className="titleH2">{card.name}</h2>
+               <h3 className="titleH3">{card.Profession}</h3>
                <p className={`presenta ${showFullText ? "showFullText" : ""}`}>
                   {card.Presentación1 || null}
                   {card.Presentación1 && <br />}

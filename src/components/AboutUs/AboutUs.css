@@ -16,13 +16,20 @@
    padding: 0.5rem;
    background-color: var(--rosa-color);
 }
-.cadaUno h3 {
+.titleH2 {
+   font-family: "Playfire";
+   font-weight: 900;
+   text-align: center;
    margin: 0;
 }
-.cadaUno h5 {
+.titleH3 {
+   font-family: "Playfire";
+   font-weight: 900;
+   text-align: center;
    margin: 0;
 }
 .presenta {
+   font-family: "generalFont", sans-serif;
    margin: 0;
    text-align: justify;
    overflow: hidden;

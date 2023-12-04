@@ -19,10 +19,13 @@
   background-color: var(--verde-color);
 }
 .introTitulo {
+  font-family: "Playfair";
+  font-weight: 900;
   text-align: center;
   margin: 0;
 }
 .infoIntro {
+  font-family: "generalFont", sans-serif;
   margin: 0;
 }
 

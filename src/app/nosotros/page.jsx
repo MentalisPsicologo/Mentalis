@@ -1,5 +1,4 @@
 import AboutUs from "@/components/AboutUs/AboutUs";
-import Footer from "@/components/Footer/Footer";
 import "./nosotros.css";
 
 export const metadata = {
@@ -11,8 +10,8 @@ const NosotrosPage = () => {
       <div>
          <div className="nosotros">
             <div className="contNos">
-               <h2>Sobre nosotros</h2>
-               <p>
+               <h2 className="titleH2">Sobre nosotros</h2>
+               <p className="textoNormal">
                   Mentalis, psicología y humanidades, es el fruto de un viaje
                   que ha llevado a nuestros fundadores, Ade y Pablo, a un puerto
                   donde convergen experiencias laborales y aprendizajes
@@ -20,7 +19,7 @@ const NosotrosPage = () => {
                   agradecidos por la colaboración con amigos y colegas, hemos
                   decidido emprender nuestro propio proyecto de vida.
                </p>
-               <p>
+               <p className="textoNormal">
                   En este momento crucial, encontramos en Mentalis la
                   oportunidad de consolidar nuestras pasiones compartidas,
                   ideales y experiencias de trabajo previas. A lo largo de
@@ -28,7 +27,7 @@ const NosotrosPage = () => {
                   concluir, lo que nos ha brindado la perspectiva necesaria para
                   dar vida a Mentalis.
                </p>
-               <p>
+               <p className="textoNormal">
                   Con la firme intención de permanecer relevantes y marcando la
                   diferencia, nos embarcamos en este proyecto con paso firme,
                   reconociendo la importancia de cada aprendizaje compartido con
@@ -36,7 +35,7 @@ const NosotrosPage = () => {
                   amalgama de nuestras experiencias de aprendizaje, trabajo en
                   equipo y el deseo de contribuir positivamente a la comunidad.
                </p>
-               <p>
+               <p className="textoNormal">
                   Somos un colectivo en proceso de formalización, avanzando con
                   paso a paso pero con una visión grandiosa. Nuestras líneas de
                   acción abarcan la clínica, investigación, historia y cultura,
@@ -45,7 +44,7 @@ const NosotrosPage = () => {
                   con el bienestar emocional, el crecimiento personal y el
                   desarrollo positivo de individuos y organizaciones.
                </p>
-               <p>
+               <p className="textoNormal">
                   Mentalis se distingue por ser el proyecto de vida de dos
                   apasionados psicólogos que, además de compartir su amor por la
                   psicología clínica, la docencia y el trabajo comunitario, han
@@ -56,7 +55,7 @@ const NosotrosPage = () => {
                   acompañamiento especializado que fomenta la empatía y el
                   bienestar emocional.
                </p>
-               <p>
+               <p className="textoNormal">
                   Estamos comprometidos con la innovación constante, buscando
                   contribuir significativamente a la evolución de la psicología
                   y las humanidades no solo en nuestra comunidad, sino también
