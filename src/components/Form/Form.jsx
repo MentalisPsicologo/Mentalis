@@ -11,7 +11,7 @@ const FormCard = () => {
    const [successMessage, setSuccessMessage] = useState("");
 
    const [formErrors, setFormErrors] = useState({
-      firstName: "",
+      firstName: "Campo obligatorio",
       lastName: "",
       phone: "",
       email: "",
