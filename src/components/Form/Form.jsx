@@ -45,14 +45,8 @@ const FormCard = () => {
    //valida campos en especifico
    const validateField = (fieldName, value) => {
       const regexOnlyEmail =
-         /*  /^[\wñ.-]+@[a-zA-Zñ\d.-]+\.[a-zA-Zñ]{2,}$/; */
          /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-ZñÑ\-0-9]+\.)+[a-zA-ZñÑ]{2,}))$/;
       const regexOnlyLetters = /^[a-zA-ZáéíóúüÁÉÍÓÚÜñÑ\s]+$/;
-      const regexOnlyNumbers = /^\+?\d+$/;
-
-      // if (!value.trim()) {
-      //    errorMessage = "Campo obligatorio.";
-      // }
 
       if (fieldName === "firstName") {
          if (value.length === 0) {
@@ -61,7 +55,7 @@ const FormCard = () => {
             errorMessage = "Por favor ingrese su nombre";
          } else if (!regexOnlyLetters.test(value) || value.length <= 2) {
             errorMessage =
-               "Por favor ingrese su nombre sin numeros o caracteres especiales.";
+               "Por favor ingrese su nombre, debe ser mayor a dos caracteres, sin numeros o caracteres especiales.";
          } else if (value.length > 30) {
             errorMessage = "El nombre no puede ser mayor a 30 caracteres.";
          } else {
@@ -71,10 +65,10 @@ const FormCard = () => {
 
       if (fieldName === "lastName") {
          if (value.length === 0) {
-            errorMessage = "Por favor ingrese su nombre";
             errorMessage = "Por favor ingrese su apellido";
          } else if (!regexOnlyLetters.test(value) || value.length <= 2) {
-            errorMessage = "El apellido ingresado no es válido.";
+            errorMessage =
+               "Por favor ingrese su apellido, debe ser mayor a dos caracteres, sin numeros o caracteres especiales.";
          } else if (value.length > 30) {
             errorMessage = "El apellido no puede ser mayor a 30 caracteres.";
          } else {
@@ -82,16 +76,12 @@ const FormCard = () => {
          }
       }
 
-      if (fieldName === "phone") {
-      }
-
       if (fieldName === "email") {
          if (value.length === 0) {
             errorMessage = "Por favor ingrese su Correo electronico";
          } else if (!regexOnlyEmail.test(value)) {
-            errorMessage =
-               "Correo electronico no valido, por favor verifique los datos ingresados";
-         } else if (value.length > 320) {
+            errorMessage = `correo de referencia: ejemplo@gmail.com`;
+         } else if (value.length > 120) {
             errorMessage =
                "El correo electronico proporsionado sobrepasa los caracteres aceptados";
          }
@@ -137,12 +127,20 @@ const FormCard = () => {
                description: "",
             });
 
+            setFormErrors({
+               firstName: "*",
+               lastName: "",
+               phone: "",
+               email: "",
+               description: "",
+            });
+
             setSuccessMessage("¡El Formulario se envio correctamente!✅");
 
             setTimeout(() => {
                setSuccessMessage("");
                setLoading(false);
-            }, 3000);
+            }, 2500);
          }
          return data;
       } catch (error) {
