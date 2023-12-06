@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
 import "../service/Paleta.css";
-
 import "./Form.css";
 import PhoneNumberValidation from "../PhoneNumberValidation/PhoneNumberValidation";
 
@@ -11,10 +10,10 @@ const FormCard = () => {
    const [successMessage, setSuccessMessage] = useState("");
    const [formErrors, setFormErrors] = useState({
       firstName: "*",
-      lastName: "",
-      phone: "",
-      email: "",
-      description: "",
+      lastName: "*",
+      phone: "*",
+      email: "*",
+      description: "*",
    });
 
    let errorMessage = "";
@@ -27,6 +26,7 @@ const FormCard = () => {
    });
    //maneja cambios en los campos del formulario
    const handleInputChange = (event) => {
+      event.preventDefault();
       const { name, value } = event.target;
       //Actualiza el estado del formulario
       setFormData((prevData) => ({
@@ -50,8 +50,10 @@ const FormCard = () => {
 
       if (fieldName === "firstName") {
          if (value.length === 0) {
-            setFormErrors({ firstName: "error" });
-
+            setFormErrors((prevErrors) => ({
+               ...prevErrors,
+               [fieldName]: errorMessage,
+            }));
             errorMessage = "Por favor ingrese su nombre";
          } else if (!regexOnlyLetters.test(value) || value.length <= 2) {
             errorMessage =
@@ -59,12 +61,19 @@ const FormCard = () => {
          } else if (value.length > 30) {
             errorMessage = "El nombre no puede ser mayor a 30 caracteres.";
          } else {
-            setFormErrors({ firstName: "error" });
+            setFormErrors((prevErrors) => ({
+               ...prevErrors,
+               [fieldName]: errorMessage,
+            }));
          }
       }
 
       if (fieldName === "lastName") {
          if (value.length === 0) {
+            setFormErrors((prevErrors) => ({
+               ...prevErrors,
+               [fieldName]: errorMessage,
+            }));
             errorMessage = "Por favor ingrese su apellido";
          } else if (!regexOnlyLetters.test(value) || value.length <= 2) {
             errorMessage =
@@ -72,28 +81,70 @@ const FormCard = () => {
          } else if (value.length > 30) {
             errorMessage = "El apellido no puede ser mayor a 30 caracteres.";
          } else {
-            setFormErrors({ lastName: "error" });
+            setFormErrors((prevErrors) => ({
+               ...prevErrors,
+               [fieldName]: errorMessage,
+            }));
+         }
+      }
+
+      if (fieldName === "phone") {
+         if (value.length === 0) {
+            setFormErrors((prevErrors) => ({
+               ...prevErrors,
+               [fieldName]: errorMessage,
+            }));
+            errorMessage = "Por favor ingrese su número de telefono";
+         } else if (value.length <= 10) {
+            setFormErrors((prevErrors) => ({
+               ...prevErrors,
+               [fieldName]: errorMessage,
+            }));
+            errorMessage = "El número ingresado no es correcto";
+         } else {
+            errorMessage = "";
+            setFormErrors((prevErrors) => ({
+               ...prevErrors,
+               [fieldName]: errorMessage,
+            }));
          }
       }
 
       if (fieldName === "email") {
          if (value.length === 0) {
+            setFormErrors((prevErrors) => ({
+               ...prevErrors,
+               [fieldName]: errorMessage,
+            }));
             errorMessage = "Por favor ingrese su Correo electronico";
          } else if (!regexOnlyEmail.test(value)) {
             errorMessage = `correo de referencia: ejemplo@gmail.com`;
          } else if (value.length > 120) {
             errorMessage =
                "El correo electronico proporsionado sobrepasa los caracteres aceptados";
+         } else {
+            setFormErrors((prevErrors) => ({
+               ...prevErrors,
+               [fieldName]: errorMessage,
+            }));
          }
       }
 
       if (fieldName === "description") {
          const trimmedValue = value.trim();
-
          if (trimmedValue.length === 0) {
+            setFormErrors((prevErrors) => ({
+               ...prevErrors,
+               [fieldName]: errorMessage,
+            }));
             errorMessage = "Por favor ingrese su consulta";
          } else if (trimmedValue.length > 10000) {
             errorMessage = "La consulta no debe superar los 10000 caracteres";
+         } else {
+            setFormErrors((prevErrors) => ({
+               ...prevErrors,
+               [fieldName]: errorMessage,
+            }));
          }
       }
       setFormErrors((prevErrors) => ({
@@ -103,8 +154,6 @@ const FormCard = () => {
    };
 
    const handleSendForm = async () => {
-      console.log(formData);
-
       try {
          setLoading(true);
          const route = process.env.NEXT_PUBLIC_PATH;
@@ -129,10 +178,10 @@ const FormCard = () => {
 
             setFormErrors({
                firstName: "*",
-               lastName: "",
-               phone: "",
-               email: "",
-               description: "",
+               lastName: "*",
+               phone: "*",
+               email: "*",
+               description: "*",
             });
 
             setSuccessMessage("¡El Formulario se envio correctamente!✅");
@@ -151,7 +200,6 @@ const FormCard = () => {
    const isSubmitDisabled = Object.values(formErrors).some(
       (error) => error !== ""
    );
-   console.log(isSubmitDisabled, loading);
 
    return (
       <div className="formContent">
@@ -195,6 +243,7 @@ const FormCard = () => {
                         }));
                         validateField("phone", value);
                      }}
+                     error={formErrors.phone}
                   />
                </div>
                {formErrors.phone && (

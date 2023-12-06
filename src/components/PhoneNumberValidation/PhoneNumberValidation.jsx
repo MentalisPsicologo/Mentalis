@@ -6,12 +6,17 @@ import "react-phone-input-2/lib/style.css";
 export default function PhoneNumberValidation({
    phoneNumberValue,
    onPhoneNumberChange,
+   error,
 }) {
+   let errors = error;
    const [isValid, setIsValid] = useState(true);
 
    const handleChange = (value) => {
       onPhoneNumberChange(value);
       setIsValid(validatePhoneNumber(value));
+      if (!isValid) {
+         errors = "Nro. incorrecto";
+      }
    };
 
    const validatePhoneNumber = (phoneNumber) => {
@@ -30,9 +35,7 @@ export default function PhoneNumberValidation({
             containerClass="custom-container-class"
             inputClass="custom-input-class"
          />
-         {!isValid && (
-            <p className="formErrors">El númeron ingresado no es correcto</p>
-         )}
+         {/* {!isValid && <p className="formErrors"></p>} */}
       </div>
    );
 }
