@@ -49,7 +49,8 @@ const FormCard = () => {
       const regexOnlyLetters = /^[a-zA-ZáéíóúüÁÉÍÓÚÜñÑ\s]+$/;
 
       if (fieldName === "firstName") {
-         if (value.length === 0) {
+         const trimmedValue = value.trim();
+         if (trimmedValue.length === 0) {
             setFormErrors((prevErrors) => ({
                ...prevErrors,
                [fieldName]: errorMessage,
@@ -58,7 +59,7 @@ const FormCard = () => {
          } else if (!regexOnlyLetters.test(value) || value.length <= 2) {
             errorMessage =
                "Por favor ingrese su nombre, debe ser mayor a dos caracteres, sin numeros o caracteres especiales.";
-         } else if (value.length > 30) {
+         } else if (trimmedValue.length > 30) {
             errorMessage = "El nombre no puede ser mayor a 30 caracteres.";
          } else {
             setFormErrors((prevErrors) => ({
@@ -69,7 +70,8 @@ const FormCard = () => {
       }
 
       if (fieldName === "lastName") {
-         if (value.length === 0) {
+         const trimmedValue = value.trim();
+         if (trimmedValue.length === 0) {
             setFormErrors((prevErrors) => ({
                ...prevErrors,
                [fieldName]: errorMessage,
@@ -78,7 +80,7 @@ const FormCard = () => {
          } else if (!regexOnlyLetters.test(value) || value.length <= 2) {
             errorMessage =
                "Por favor ingrese su apellido, debe ser mayor a dos caracteres, sin numeros o caracteres especiales.";
-         } else if (value.length > 30) {
+         } else if (trimmedValue.length > 30) {
             errorMessage = "El apellido no puede ser mayor a 30 caracteres.";
          } else {
             setFormErrors((prevErrors) => ({
