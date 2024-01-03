@@ -1,5 +1,4 @@
 .contNav {
-   background: var(--durazno-color);
    display: flex;
    justify-content: center;
    align-items: center;
@@ -41,12 +40,10 @@
 }
 .contLogo {
    background-color: rgba(255, 255, 255, 0.601);
-   border: 1px solid black;
-   border-radius: 100%;
 }
-.logoInicio {
+/* .logoInicio {
    padding: 5px;
-}
+} */
 
 @media screen and (min-width: 768px)  {
    .navBar {
