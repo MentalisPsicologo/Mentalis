@@ -1,5 +1,6 @@
 import "./Footer.css";
 import Image from "next/image";
+import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
    faSquareFacebook,
@@ -47,12 +48,20 @@ const Footer = () => {
                   <FontAwesomeIcon className="icons" icon={faInstagram} />
                </a>
                <a
-                  href="https://wa.me/56977499792"
+                  href="https://wa.me/+524881241263"
                   target="_blank"
                   rel="noopener noreferrer"
                >
                   <FontAwesomeIcon className="icons" icon={faWhatsapp} />
                </a>
+               <a
+                  href="https://www.google.com/maps/place/Mentalis/@23.6429546,-100.6393629,20z/data=!4m15!1m8!3m7!1s0x8680a9c900ff3167:0x79309f41c9ad694c!2sInsurgentes+317,+Centro,+78700+Matehuala,+S.L.P.,+M%C3%A9xico!3b1!8m2!3d23.6428122!4d-100.6391991!16s%2Fg%2F11l72c5989!3m5!1s0x8680a964b0651455:0x958559e7f42b33f2!8m2!3d23.6428009!4d-100.6392379!16s%2Fg%2F11lcmdyp_b?entry=ttu"
+                  target="_blank"
+                  rel="noopener noreferrer"
+               >
+                  <FontAwesomeIcon className="icons" icon={faMapMarkerAlt} />
+               </a>
+               
             </div>
          </div>
       </footer>
