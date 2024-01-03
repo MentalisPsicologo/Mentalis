@@ -164,6 +164,7 @@ const FormCard = () => {
             method: "POST",
             headers: {
                "Content-Type": "application/json",
+               Origin: "https://www.mentalis.com.mx",
             },
             body: JSON.stringify(formData),
          });

@@ -11,11 +11,12 @@ const NavBar = () => {
    return (
       <div className="contNav">
          <nav className="navBar ">
+            <div id="toggle-menu" className="toggle-menu"></div>
             <Link href="/" className="contLogo">
                <Image
-                  src="https://res.cloudinary.com/daoavxvau/image/upload/v1700765805/Mentalis/r2koo4vquo5rzxra57vq.png"
-                  width={40}
-                  height={40}
+                  src="https://res.cloudinary.com/daoavxvau/image/upload/v1703634000/Mentalis/logo_uwvdw0.png"
+                  width={140}
+                  height={100}
                   alt="foto del logo"
                   className="logoInicio"
                />
