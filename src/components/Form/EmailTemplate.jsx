@@ -8,7 +8,7 @@ const EmailTemplate = ({ firstName, lastName, phone, email, description }) => (
       <h4>numero de telefono: {phone}</h4>
       <h4>correo electronico: {email}</h4>
       <button>
-         <a href="https://mentalis-mx.vercel.app/"> Ve a Mentalis</a>
+         <a href="https://mentalis.com.mx/"> Ve a Mentalis</a>
       </button>
    </div>
 );

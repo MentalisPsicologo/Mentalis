@@ -1,4 +1,4 @@
-import FormCard from "@/components/Form/Form";
+import FormCard from "../../components/Form/Form";
 
 export const metadata = {
    title: "FormInfo - Mentalis",
