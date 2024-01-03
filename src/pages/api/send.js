@@ -9,7 +9,7 @@ async function POST(req, res) {
       const formData = req.body;
 
       const data = await resend.emails.send({
-         from: "MENTALIS <onboarding@resend.dev>",
+         from: "MENTALIS <info@mentalis.com.mx>",
          to: ["mentalispsicologo@gmail.com"],
          //titulo del correo que llega a mentalis
          subject: "Consulta General",
