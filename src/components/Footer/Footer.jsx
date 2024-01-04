@@ -13,7 +13,7 @@ const Footer = () => {
    return (
       <footer>
          <div className="footer">
-            <div className="contLogo">
+            <div className="contLogoFoot">
                <Link href="/">
                   {/* {!isHome && ( */}
                   <Image
@@ -61,7 +61,6 @@ const Footer = () => {
                >
                   <FontAwesomeIcon className="icons" icon={faMapMarkerAlt} />
                </a>
-               
             </div>
          </div>
       </footer>
