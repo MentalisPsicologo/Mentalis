@@ -8,6 +8,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
    faLinkedin,
    faTwitterSquare,
+   faFacebookSquare,
+   faInstagramSquare,
 } from "@fortawesome/free-brands-svg-icons";
 
 const AboutUs = () => {
@@ -23,8 +25,8 @@ const AboutUs = () => {
             <div key={index} className="cadaUno">
                <Image
                   src={card.image}
-                  width={250}
-                  height={250}
+                  width={100}
+                  height={100}
                   alt="foto de perfil"
                   className="fotoNos"
                />
@@ -53,6 +55,20 @@ const AboutUs = () => {
                      rel="noopener noreferrer"
                   >
                      <FontAwesomeIcon icon={faLinkedin} />
+                  </a>
+                  <a
+                     href={card.URLInstagram}
+                     target="_blank"
+                     rel="noopener noreferrer"
+                  >
+                     <FontAwesomeIcon icon={faInstagramSquare} />
+                  </a>
+                  <a
+                     href={card.URLFacebook}
+                     target="_blank"
+                     rel="noopener noreferrer"
+                  >
+                     <FontAwesomeIcon icon={faFacebookSquare} />
                   </a>
                   <a
                      href={card.URlTwitter}
