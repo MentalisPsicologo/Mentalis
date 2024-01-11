@@ -1,7 +1,22 @@
 export const dataAboutUs = [
    {
+      name: "Pablo Armijo",
+      Profession: "Director",
+      Presentación1:
+         "Licenciado en Psicología por la Universidad Autónoma de Nuevo León. Estudió una maestría en Trabajo Social con orientación en proyectos sociales. Ha completado su formación en cursos, diplomados y grupos de estudio en temas de educación, psicoanálisis, grupos operativos, psicología social, sociología, entre otros.",
+      Presentación2:
+         "Ha trabajado como docente de nivel medio superior y superior. Tiene experiencia de trabajo en comunidades en distintas organizaciones de la sociedad civil.",
+      Presentación3: "",
+      Presentación4: "",
+      Presentación5: "",
+      URlTwitter: "https://twitter.com/MariaMari0nette",
+      URLLinkedIn: "https://www.linkedin.com/in/jesurenm/",
+      // URLFacebook: "",
+      image: "https://i.pinimg.com/564x/9a/03/d0/9a03d0f5eeeca9056f6c94544490ce8e.jpg",
+   },
+   {
       name: "Adelaida Rangel",
-      Profession: "Psicóloga",
+      Profession: "Coordinadora",
       Presentación1:
          "Estudió psicología en la Universidad de Matehuala y terminó su formación en la Universidad Nacional Autónoma de México (UNAM) donde realizó su seminario de titulación.",
       Presentación2:
@@ -13,21 +28,53 @@ export const dataAboutUs = [
       Presentación5: "",
       URlTwitter: "https://twitter.com/carlos",
       URLLinkedIn: "https://www.linkedin.com/in/morillocd/",
-      image: "https://i.pinimg.com/564x/f7/02/19/f702190017e47290c419b22f7c0c70f3.jpg",
+      URLFacebook: "",
+      image: "https://res.cloudinary.com/daoavxvau/image/upload/v1704738921/Mentalis/WhatsApp_Image_2024-01-08_at_15.12.31_x80bik.jpg",
    },
    {
-      name: "Pablo Armijo",
-      Profession: "Psicólogo",
-      Presentación1:
-         "Licenciado en Psicología por la Universidad Autónoma de Nuevo León. Estudió una maestría en Trabajo Social con orientación en proyectos sociales. Ha completado su formación en cursos, diplomados y grupos de estudio en temas de educación, psicoanálisis, grupos operativos, psicología social, sociología, entre otros.",
-      Presentación2:
-         "Ha trabajado como docente de nivel medio superior y superior. Tiene experiencia de trabajo en comunidades en distintas organizaciones de la sociedad civil.",
+      name: "Francisco  Martín Mendoza",
+      Profession: "Formación y Profesionalización",
+      Presentación1: "",
+      Presentación2: "",
       Presentación3: "",
       Presentación4: "",
       Presentación5: "",
-      URlTwitter: "https://twitter.com/MariaMari0nette",
-      URLLinkedIn: "https://www.linkedin.com/in/jesurenm/",
-      image: "https://i.pinimg.com/564x/9a/03/d0/9a03d0f5eeeca9056f6c94544490ce8e.jpg",
+      // URlTwitter: "",
+      URLLinkedIn:
+         "https://www.linkedin.com/in/francisco-mart%C3%ACn-mendoza-galindo-0b14462a9/",
+      URLFacebook:
+         "https://www.facebook.com/franciscomartin.mendozagalindo?mibextid=ZbWKwL",
+      image: "https://res.cloudinary.com/daoavxvau/image/upload/v1704738923/Mentalis/WhatsApp_Image_2024-01-08_at_15.12.32_f7gmna.jpg",
+   },
+   {
+      name: "Lorenzo Armenta Melendez",
+      Profession: "Clínica Psicoanalítica",
+      Presentación1: "",
+      Presentación2: "",
+      Presentación3: "",
+      Presentación4: "",
+      Presentación5: "",
+      // URlTwitter: "",
+      URLLinkedIn:
+         "https://www.linkedin.com/in/lorenzo-guillermo-armenta-melendez-bbbab1282?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      URLFacebook:
+         "https://www.facebook.com/profile.php?id=61554862362944&mibextid=ZbWKwL",
+      image: "https://res.cloudinary.com/daoavxvau/image/upload/v1704738922/Mentalis/WhatsApp_Image_2024-01-08_at_15.12.32_1_qvgpav.jpg",
+   },
+   {
+      name: "Ana Teresa Facundo",
+      Profession: "",
+      Presentación1: "",
+      Presentación2: "",
+      Presentación3: "",
+      Presentación4: "",
+      Presentación5: "",
+      URLInstagram:
+         "https://www.instagram.com/anatefacundo?utm_source=qr&igsh=ZnBxeWNkeWlvcDg5",
+      // URlTwitter: "",
+      // URLLinkedIn: "",
+      URLFacebook: "",
+      image: "https://res.cloudinary.com/daoavxvau/image/upload/v1704738922/Mentalis/WhatsApp_Image_2024-01-08_at_15.12.32_2_ltk0ms.jpg",
    },
    /* {
       name: "",
@@ -39,18 +86,7 @@ export const dataAboutUs = [
       Presentación5: "",
       URlTwitter: "",
       URLLinkedIn: "",
-      image: "",
-   },
-   {
-      name: "",
-      Profession: "",
-      Presentación1: "",
-      Presentación2: "",
-      Presentación3: "",
-      Presentación4: "",
-      Presentación5: "",
-      URlTwitter: "",
-      URLLinkedIn: "",
+      URLFacebook: "",
       image: "",
    },
    , */
