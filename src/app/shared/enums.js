@@ -12,7 +12,7 @@ export const dataAboutUs = [
       URlTwitter: "https://twitter.com/MariaMari0nette",
       URLLinkedIn: "https://www.linkedin.com/in/jesurenm/",
       // URLFacebook: "",
-      image: "https://i.pinimg.com/564x/9a/03/d0/9a03d0f5eeeca9056f6c94544490ce8e.jpg",
+      image: "https://res.cloudinary.com/daoavxvau/image/upload/v1705353021/Mentalis/Pablo_Armijo_zr2wcc.png",
    },
    {
       name: "Adelaida Rangel",
@@ -72,7 +72,8 @@ export const dataAboutUs = [
       URLInstagram:
          "https://www.instagram.com/anatefacundo?utm_source=qr&igsh=ZnBxeWNkeWlvcDg5",
       // URlTwitter: "",
-      // URLLinkedIn: "",
+      URLLinkedIn:
+         "https://www.linkedin.com/in/ana-teresa-facundo-hernandez-0130406b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       URLFacebook: "",
       image: "https://res.cloudinary.com/daoavxvau/image/upload/v1704738922/Mentalis/WhatsApp_Image_2024-01-08_at_15.12.32_2_ltk0ms.jpg",
    },

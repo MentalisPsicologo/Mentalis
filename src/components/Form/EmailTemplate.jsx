@@ -2,11 +2,12 @@
 const EmailTemplate = ({ firstName, lastName, phone, email, description }) => (
    <div>
       <h1>
-         nombre y apellido del cliente: {firstName} {lastName}
+         Interesado: {firstName} {lastName}
       </h1>
+      <h4>Teléfono: {phone}</h4>
+      <h4>Correo Electrónico: {email}</h4>
+      <hr />
       <p>Descripcion de solicitud: {description}</p>
-      <h4>numero de telefono: {phone}</h4>
-      <h4>correo electronico: {email}</h4>
       <button>
          <a href="https://mentalis.com.mx/"> Ve a Mentalis</a>
       </button>
