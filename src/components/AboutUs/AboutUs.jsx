@@ -25,8 +25,8 @@ const AboutUs = () => {
             <div key={index} className="cadaUno">
                <Image
                   src={card.image}
-                  width={100}
-                  height={100}
+                  width={200}
+                  height={250}
                   alt="foto de perfil"
                   className="fotoNos"
                />
