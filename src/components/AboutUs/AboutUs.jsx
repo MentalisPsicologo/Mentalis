@@ -13,10 +13,10 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 const AboutUs = () => {
-   const [showFullText, setShowFullText] = useState(false);
+   const [expandedCardIndex, setExpandedCardIndex] = useState(null);
 
-   const toggleText = () => {
-      setShowFullText(!showFullText);
+   const toggleText = (index) => {
+      setExpandedCardIndex(expandedCardIndex === index ? null : index);
    };
 
    return (
@@ -32,7 +32,11 @@ const AboutUs = () => {
                />
                <h2 className="titleH2">{card.name}</h2>
                <h3 className="titleH3">{card.Profession}</h3>
-               <p className={`presenta ${showFullText ? "showFullText" : ""}`}>
+               <p
+                  className={`presenta ${
+                     expandedCardIndex === index ? "showFullText" : ""
+                  }`}
+               >
                   {card.Presentación1 || null}
                   {card.Presentación1 && <br />}
                   {card.Presentación2 || null}
@@ -43,11 +47,12 @@ const AboutUs = () => {
                   {card.Presentación4 && <br />}
                   {card.Presentación5 || null}
                </p>
-               {!showFullText && (
-                  <button onClick={toggleText} className="readMoreBtn">
-                     Leer más..
-                  </button>
-               )}
+               <button
+                  onClick={() => toggleText(index)}
+                  className="readMoreBtn"
+               >
+                  {expandedCardIndex === index ? "Leer menos" : "Leer más..."}
+               </button>
                <div className="red">
                   <a
                      href={card.URLLinkedIn}
