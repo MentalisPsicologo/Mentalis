@@ -202,3 +202,27 @@ export const dataVision = [
       image: "",
    }, */
 ];
+
+export const imagesHome = [
+   {
+      url: "https://res.cloudinary.com/daoavxvau/image/upload/v1699902288/Mentalis/logo_l8vwnw.png",
+      alt: "Logo Mentalis",
+   },
+   {
+      url: "https://res.cloudinary.com/daoavxvau/image/upload/v1704738922/Mentalis/WhatsApp_Image_2024-01-08_at_15.12.32_3_bhiuob.jpg",
+      alt: "Equipo Mentalis",
+   },
+   {
+      url: "https://res.cloudinary.com/daoavxvau/image/upload/v1704738922/Mentalis/WhatsApp_Image_2024-01-08_at_15.12.33_2_xcckfq.jpg",
+      alt: "Espera",
+   },
+   {
+      url: "https://res.cloudinary.com/daoavxvau/image/upload/v1704738921/Mentalis/WhatsApp_Image_2024-01-08_at_15.12.32_4_wxsxgr.jpg",
+      alt: "Recepción",
+   },
+   {
+      url: "https://res.cloudinary.com/daoavxvau/image/upload/v1704738921/Mentalis/WhatsApp_Image_2024-01-08_at_15.12.33_1_zrgoso.jpg",
+      alt: "Reuniones",
+   },
+   // Agrega más objetos para más imágenes
+];

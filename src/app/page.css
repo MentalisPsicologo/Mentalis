@@ -6,8 +6,9 @@
   align-items: center;
 }
 .contImagen {
-  background-color: white;
+  width:85%;
 }
+
 
 .intro {
   display: flex;
@@ -33,30 +34,31 @@
 display: none;
 }
 
-.logoLandingPage {
-  display: block;
-  margin: 0 auto;
-  max-width: 100%;
-  max-height: 100%;
-  animation: fadeIn 3s ease;
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    filter:blur(20px)
+.imageHome {
+    width: 100%;
+    height: auto;
   }
-  10% {
-    opacity: 1;
-    filter: brightness(2) blur(10px);
-  }
-}
 
 @media screen and (min-width: 768px)  {
+  .contImagen{
+    width: 50%;
+  }
   .infoIntro {
     width: 80%;
   }
-  .logoLandingPage {
-    width: 60%;
+  .imageHome {
+    width: auto;
+    height: 20rem;
+  }
+  .slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .carrusel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
