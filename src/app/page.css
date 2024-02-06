@@ -41,15 +41,12 @@ display: none;
 
 @media screen and (min-width: 768px)  {
   .contImagen{
-    width: 50%;
+    width: 40%;
   }
   .infoIntro {
-    width: 80%;
+    width: 70%;
   }
-  .imageHome {
-    width: auto;
-    height: 20rem;
-  }
+  
   .slick-slide {
     display: flex;
     justify-content: center;
